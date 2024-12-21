@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: yourusername/yourrepo  # Replace with your GitHub username/repo
+  branch: main                # Replace with the correct branch name if it's not "main"
+
+media_folder: "static/images"  # Adjust this to your project's image folder
+public_folder: "/images"       # Adjust based on your image URLs
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
